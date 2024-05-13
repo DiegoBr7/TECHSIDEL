@@ -1,0 +1,694 @@
+:root {
+  --primary-color: #12134A;
+  --secondary-color:#02DAA0;
+  --third-color:#5BC67C;
+  --fourth-color:#EAEBED;
+  --fifth-color:#F5F5F5;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  margin: 0px;
+}
+.navbar-custom {
+  background-color: var(--primary-color);
+
+  color: white;
+}
+
+body {
+}
+
+.imgOne {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: 50px;
+}
+
+#logo {
+  width: 70px;
+  margin-left: 50px;
+}
+/* __________________________________________SECTION BR______________________________________________________________ */
+
+
+
+/* __________________________________________SECTION BR______________________________________________________________ */
+
+
+
+
+/* __________________________________________SECTION BR______________________________________________________________ */
+
+.br {
+  background-color: var(--primary-color);
+  margin-left: 250px;
+  width: 900px;
+  height: 200px;
+
+  border: 0.5px solid black;
+  box-shadow: black 0px 1px 20px 0px;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: none;
+  padding-top: 1px;
+}
+
+.br a {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  font-weight: bold;
+  color: white;
+  margin-left: 150px;
+  text-decoration: none;
+  width: 600px;
+  margin-top: 65px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  background-color: rgb(0, 0, 0);
+}
+
+.br {
+  transition: 3s; /* Adiciona uma transição suave na mudança de cor de fundo */
+}
+
+.br a:hover {
+  background-color: #6c757d56; /* Altera a cor de fundo ao passar o mouse sobre o botão */
+  color: #ffffff; /* Altera a cor do texto ao passar o mouse sobre o botão */
+}
+
+/* _____________________________     mnOne           ________________________________________________________ */
+
+.mnOne {
+  display: flex;
+}
+
+.mnOne p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.p1 {
+  color: rgb(0, 199, 222); /* Azul-turquesa claro */
+  font-weight: bolder;
+  font-size: 56px;
+}
+
+.p2 {
+  font-weight: bolder;
+  font-size: 50px;
+  color: rgb(126, 255, 0); /* Verde-menta claro */
+}
+
+.p3 {
+  color: rgb(60, 179, 113); /* Azul-turquesa médio */
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+/* _____________________________     PLAY           ________________________________________________________ */
+
+.play {
+  width: 50%;
+  margin-top: 150px;
+}
+
+.play img {
+}
+
+/*___________________________________________________ CARROSSEL____________________________________________________ */
+
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  width: 100%;
+}
+
+.carousel {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.carousel-slides {
+  display: flex;
+  position: relative;
+  width: 400%;
+}
+
+.carousel-slides input[type="radio"] {
+  display: none;
+}
+
+.slide-imgs {
+  transition: 2s;
+  width: 25%;
+}
+
+.slide-imgs img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 500px;
+}
+
+.carousel-navigation {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 7%;
+  left: 6.25%;
+  width: 12.5%;
+}
+
+.carousel-btn {
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+  transition: all 500ms;
+}
+
+.carousel-btn:not(:last-child) {
+  margin-right: 10%;
+}
+
+.carousel-btn:hover {
+  background-color: white;
+}
+
+#radio1:checked ~ .first-img {
+  margin-left: 0;
+}
+#radio2:checked ~ .first-img {
+  margin-left: -25%;
+}
+#radio3:checked ~ .first-img {
+  margin-left: -50%;
+}
+#radio4:checked ~ .first-img {
+  margin-left: -75%;
+}
+
+#radio1:checked ~ .carousel-navigation > .btn1 {
+  background-color: white;
+}
+#radio2:checked ~ .carousel-navigation > .btn2 {
+  background-color: white;
+}
+#radio3:checked ~ .carousel-navigation > .btn3 {
+  background-color: white;
+}
+#radio4:checked ~ .carousel-navigation > .btn4 {
+  background-color: white;
+}
+
+/*___________________________________________________ NAVEGACAO 01____________________________________________________ */
+
+.navegOne {
+  width: 100%;
+  height: 900px;
+  background-color: white;
+}
+
+/* ________________________________________________________________________________________________________ */
+
+.ben {
+  height: 700px;
+  width: 100%;
+  background-color: #f2f5ff;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.ben2 {
+  height: 700px;
+  width: 100%;
+  background-color: #f2f5ff;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fila {
+  background-color: #e4ebf9;
+  width: 150px;
+  height: 130px;
+  border-radius: 20px;
+  margin-top: 250px;
+  margin-left: 100px;
+}
+
+.fila img {
+  margin-left: 60px;
+  margin-top: 50px;
+  width: 35px;
+  height: 35px;
+}
+.fila h3 {
+  margin-top: 4rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(0, 51, 91);
+}
+
+.fila p {
+  text-align: center;
+  width: 100%;
+  max-width: 257px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(45, 55, 72);
+}
+
+.com {
+  background-color: #e4ebf9;
+  width: 150px;
+  height: 130px;
+  border-radius: 20px;
+  margin-top: 250px;
+}
+
+.com img {
+  margin-left: 60px;
+  margin-top: 50px;
+  width: 35px;
+  height: 35px;
+}
+.com h3 {
+  margin-top: 4rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(0, 51, 91);
+}
+
+.com p {
+  text-align: center;
+  width: 100%;
+  max-width: 257px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(45, 55, 72);
+}
+
+.aler {
+  background-color: #e4ebf9;
+  width: 150px;
+  height: 130px;
+  border-radius: 20px;
+  margin-top: 250px;
+  margin-right: 100px;
+}
+
+.aler img {
+  margin-left: 60px;
+  margin-top: 50px;
+  width: 35px;
+  height: 35px;
+}
+.aler h3 {
+  margin-top: 4rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(0, 51, 91);
+}
+
+.aler p {
+  text-align: center;
+  width: 100%;
+  max-width: 257px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(45, 55, 72);
+}
+
+.carousel2 {
+  display: none;
+}
+/* ______________________________MN03__________________________________________________________________________ */
+
+.mn03{
+ padding-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.conect{
+  margin-right: 120px;
+  width: 500px;
+  height: 500px;
+}
+
+.conect2 h1{
+  align-self: center;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: rgb(242, 101, 34);
+  line-height: 120%;
+}
+
+.conect2 h3 {
+  align-self: center;
+  text-align: center;
+  max-width: 306px;
+  font-size: 1.13rem;
+  font-weight: 400;
+  color: rgb(142, 153, 171);
+  margin-top: 0.125rem;
+}
+
+.conect2 strong{
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: rgb(74, 85, 104);
+}
+
+
+.conect2 p{
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(142, 153, 171);
+}
+
+ .conect2 .css{
+  display: flex;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.css-ulaqga {
+  appearance: none;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  line-height: 1.2;
+  transition-property: var(--chakra-transition-property-common);
+  transition-duration: var(--chakra-transition-duration-normal);
+  height: var(--chakra-sizes-10);
+  min-width: var(--chakra-sizes-10);
+  padding-inline-start: var(--chakra-space-4);
+  padding-inline-end: var(--chakra-space-4);
+  background: rgb(242, 245, 255);
+  color: rgb(45, 55, 72);
+  border-radius: 0.375rem;
+  border: 1px solid rgb(142, 153, 171);
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/*___________________________________________________ FOOTER____________________________________________________ */
+
+footer{
+  background-color: var(--primary-color);
+  height: 100%;
+  width: 100%;
+}
+
+
+.ft{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 150px;
+  margin-left: 150px;
+  padding-top: 200px;
+}
+.ft2{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 150px;
+  margin-left: 150px;
+  padding-bottom: 200px;
+  
+}
+
+.ft2 a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.tec {
+margin-bottom: 100px;
+}
+
+.face{
+  margin-top: 50px;
+  
+}
+.face a{
+  margin-right: 20px;
+}
+
+
+
+/*___________________________________________________ MEDIA QUERY____________________________________________________ */
+
+/* Media queries para smartphones */
+@media (max-width: 320px) {
+  /* Regras para smartphones pequenos */
+  .navbar-toggler {
+    margin-right: 30px;
+  }
+
+  .imgOne {
+    width: 50px;
+    height: 50px;
+  }
+  .br {
+    margin-left: 50px;
+    width: 230px;
+    height: 70px;
+  }
+  .br a {
+    margin-left: 35px;
+    width: 170px;
+    height: 50px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .mnOne {
+    display: block;
+  }
+  .play {
+    width: 100%;
+  }
+
+  .navegOne img {
+    width: 100%;
+    height: 200px;
+}
+
+.sr-only{
+  width: 100%;
+  color: black;
+
+}
+.navbar-light .navbar-nav .nav-link {
+  margin-left: 10px;
+}
+
+  .mnOne p {
+  }
+
+  .p1 {
+    margin-left: 20px;
+    font-size: 36px;
+  }
+
+  .p2 {
+    margin-left: 20px;
+    font-size: 25px;
+  }
+
+  .p3 {
+    margin-left: 20px;
+    font-size: 15px;
+  }
+
+  .ben {
+    display: none;
+  }
+  .ben2 {
+    height: 500px;
+    margin-top: 100px;
+  }
+
+  .com {
+    margin-top: 80px;
+    justify-self: center;
+    justify-content: center;
+  }
+
+  .carousel2 {
+    margin-top: 500px;
+    display: block;
+  }
+}
+/* _____________________________________________________________________________ */
+
+@media (min-width: 320px) and (max-width: 375px) {
+  /* Regras para smartphones pequenos */
+
+  .navbar-toggler {
+    margin-right: 30px;
+  }
+
+  .imgOne {
+    width: 50px;
+    height: 50px;
+  }
+  .br {
+    margin-left: 80px;
+    width: 230px;
+    height: 70px;
+  }
+  .br a {
+    margin-left: 35px;
+    width: 170px;
+    height: 50px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .mnOne {
+    display: block;
+  }
+  .play {
+    width: 100%;
+  }
+
+  .navegOne img {
+    width: 100%;
+    height: 200px;
+}
+
+.sr-only{
+  width: 100%;
+  color: black;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin-left: 10px;
+}
+
+  .mnOne p {
+  }
+
+  .p1 {
+    margin-left: 20px;
+    font-size: 36px;
+  }
+
+  .p2 {
+    margin-left: 20px;
+    font-size: 25px;
+  }
+
+  .p3 {
+    margin-left: 20px;
+    font-size: 15px;
+  }
+
+  .ben {
+    display: none;
+  }
+  .ben2 {
+    height: 500px;
+    margin-top: 100px;
+  }
+
+  .com {
+    margin-top: 80px;
+    justify-self: center;
+    justify-content: center;
+  }
+
+  .carousel2 {
+    margin-top: 500px;
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  /* Regras para smartphones médios */
+}
+
+@media (max-width: 768px) {
+  /* Regras para smartphones grandes */
+}
+
+/* Media queries para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Regras para tablets */
+}
+
+/* Media queries para desktops */
+@media (min-width: 1025px) {
+  /* Regras para desktops */
+}
+
+/* Estilo padrão para telas menores */
+
+@media screen and (max-width: 993px) {
+  .hr {
+    display: none;
+  }
+
+
+  .hamburguer {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 30px;
+    position: relative;
+    bottom: 67px;
+  }
+  .slide-imgs img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 300px;
+  }
+
+
+ .navegOne img {
+    width: 100%;
+    height: 400px;
+  }
+
+
+}
+
+@media screen {
+}
